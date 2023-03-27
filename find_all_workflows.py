@@ -20,17 +20,8 @@ driver = webdriver.Chrome(options=chrome_options)
 driver = webdriver.Chrome(service=service)
 count=1
 b_url = 'https://practise.usemango.co.uk'
-flag = 0
-def crawl(url, visited_links, current_workflow,count,flag):
-    print(flag)
+def crawl(url, visited_links, current_workflow,count):
     if url in visited_links:
-        print("exists already")
-        print("before : ",flag)
-        flag=flag+1
-        print("after : ",flag)
-
-        # if(flag==2):
-        #     get_screenshot(current_workflow)
         f = open("demo2.json", "a")
         f.write(json.dumps(current_workflow))
         f.write("\n")
@@ -41,8 +32,7 @@ def crawl(url, visited_links, current_workflow,count,flag):
         # Remove the current link from the current workflow and return
         if(len(current_workflow)!=0):
             k = current_workflow.pop()
-            print('pop'+'   '+k)
-        return flag
+        return
 
     # Add the URL to the set of visited links
     else:
@@ -65,20 +55,13 @@ def crawl(url, visited_links, current_workflow,count,flag):
 
     # If there are no new links
     if not links:
-        print("inside no link found")
         f = open("demo2.json", "a")
         f.write(json.dumps(current_workflow))
         f.write("\n")
         f.close()
-        flag=flag+1
-        # if(flag==2):
-        #     get_screenshot(current_workflow)
-
-
         if(len(current_workflow)!=0):
             k = current_workflow.pop()
-            print('pop'+'   '+k)
-        return flag
+        return
 
     # Loop through new links and add them to the current workflow and visited links
     else:
@@ -100,14 +83,14 @@ def crawl(url, visited_links, current_workflow,count,flag):
                 # count+=1
                 # driver.implicitly_wait(1)
                 # Recursively crawl the new link
-                print("before recursive call :",flag)
-                flag=crawl(new_url, visited_links, current_workflow,count,flag)
+
+                crawl(new_url, visited_links, current_workflow,count)
 
     # remove the parent after all its children are looped through
     if(len(current_workflow)!=0):
         current_workflow.pop()
 
-    return flag
+    return
 
 
 # Example usage
@@ -116,5 +99,5 @@ current_workflow = ['https://practise.usemango.co.uk']
 
 
 
-crawl(b_url, visited_links, current_workflow,count,flag)
+crawl(b_url, visited_links, current_workflow,count)
 
