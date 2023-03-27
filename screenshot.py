@@ -26,4 +26,4 @@ def get_screenshot(num):
                 count+=1
             driver.quit()
         count+=1
-get_screenshot(29)
+get_screenshot(33)

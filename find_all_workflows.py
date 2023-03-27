@@ -5,6 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from urllib.parse import urlparse
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
 
 # from screenshot import get_screenshot
 
@@ -18,7 +19,7 @@ chrome_options.add_argument('--headless')
 driver = webdriver.Chrome(options=chrome_options)
 driver = webdriver.Chrome(service=service)
 count=1
-b_url = 'https://app.usemango.co.uk'
+b_url = 'https://practise.usemango.co.uk'
 flag = 0
 def crawl(url, visited_links, current_workflow,count,flag):
     print(flag)
@@ -44,30 +45,23 @@ def crawl(url, visited_links, current_workflow,count,flag):
         return flag
 
     # Add the URL to the set of visited links
-    visited_links.add(url)
+    else:
+        visited_links.add(url)
 
     # Add the default protocol if none is supplied
 
 
     # Send an HTTP request to the URL and retrieve the response
     # print(url)
-    print("url"+url)
-    response = requests.get(url)
-
-    # Retrieve the session ID from the response headers
-    # Print the session ID
-    # session_id = response.cookies.get('session_id')
-    # print("Session ID:", session_id)
-    # print(url)
+    # response = requests.get(url)
 
     # Parse the HTML content of the response using BeautifulSoup
-    soup = BeautifulSoup(response.content, 'html.parser')
+    # soup = BeautifulSoup(response.content, 'html.parser')
 
     # Find all links on the page
-    links = soup.find_all('a',href=True)
-    print(soup)
-
-
+    # links = soup.find_all('a',href=True)
+    driver.get(b_url)
+    links = driver.find_elements(By.TAG_NAME, 'a')
 
     # If there are no new links
     if not links:
@@ -89,8 +83,8 @@ def crawl(url, visited_links, current_workflow,count,flag):
     # Loop through new links and add them to the current workflow and visited links
     else:
         for link in links:
-            print(links)
-            new_url = link.get('href')
+            print(link)
+            new_url = link.get_attribute('href')
             if not new_url.startswith('http'):
                 if not new_url.startswith('/'):
                     new_url='/'+new_url
@@ -118,7 +112,7 @@ def crawl(url, visited_links, current_workflow,count,flag):
 
 # Example usage
 visited_links = set()
-current_workflow = ['https://app.usemango.co.uk']
+current_workflow = ['https://practise.usemango.co.uk']
 
 
 
