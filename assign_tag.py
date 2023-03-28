@@ -3,16 +3,10 @@ import nltk
 nltk.download('wordnet')
 from nltk.corpus import wordnet
 from difflib import SequenceMatcher
-urls = [
-    "https://example.com/home",
-    "https://example.com/login",
-    "https://example.com/cart",
-    "https://example.com/about",
-    "https://example.com/contact",
-    "https://example.com/registration"
-]
+from extract_path_from_url import get_path
 
-tags = ["home", "login", "cart", "about", "contact", "signup","search"]
+
+tags = ["home", "login", "cart", "about", "contact", "signup","search","others","admin","services","gallery","help",'products',"calender","private policy","staff","resources","portfolio","careers","forum","feedback","partners"]
 def extract_words(url):
     pattern = r'\b\w+\b'
     words = re.findall(pattern, url)
@@ -26,19 +20,26 @@ def word_similarity(word1, word2):
         similarity = SequenceMatcher(None, word1, word2).ratio()
     return similarity
 def assign_tag(url):
+    print(url)
+    url = get_path(url)
+    print(url)
     words = extract_words(url)
     max_score = 0
     tag = None
     for t in tags:
         scores = [word_similarity(t, w) for w in words]
-        avg_score = sum(scores) / len(scores)
+        if len(scores) > 0:
+            avg_score = sum(scores) / len(scores)
+        else:
+            avg_score = 0  # or whatever default value you want to use
+
         if avg_score > max_score:
             max_score = avg_score
             tag = t
     return tag
 
 
-url = "accordion"
+url = "Login-Portal/index.html"
 words = extract_words(url)
 print("Words:", words)
 for tag in tags:

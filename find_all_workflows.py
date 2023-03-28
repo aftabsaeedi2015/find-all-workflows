@@ -7,35 +7,39 @@ from urllib.parse import urlparse
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from assign_tag import assign_tag
+import uuid
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 # from screenshot import get_screenshot
 
 
 
-# Initialize the Selenium web driver
-service = Service('./chromedriver')
-chrome_options = Options()
-chrome_options.add_argument('--headless')
-# create a new instance of the Chrome driver
-driver = webdriver.Chrome(options=chrome_options)
-driver = webdriver.Chrome(service=service)
+# # Initialize the Selenium web driver
+# service = Service('./chromedriver')
+# chrome_options = Options()
+# chrome_options.add_argument('--headless')
+# # create a new instance of the Chrome driver
+# driver = webdriver.Chrome(options=chrome_options)
+# driver = webdriver.Chrome(service=service)
 
-b_url = 'http://webdriveruniversity.com/index.html'
+b_url = 'https://parabank.parasoft.com/parabank/index.htm'
 
-import uuid
+
 
 def generate_unique_id():
     return str(uuid.uuid4())
 
-def crawl(url, visited_links, current_workflow,parent_id):
+def crawl(url, visited_links, current_workflow,parent_id,tag):
     parent = {
         'id': generate_unique_id(),
         'url': url,
-        'tag':assign_tag(url),
+        'tag':tag,
         'parent_id':parent_id,
         'children': []
     }
-    print(parent['tag'])
+    # print(parent)
     if url in visited_links:
         # f = open("demo3.json", "a")
         # f.write(json.dumps(parent))
@@ -85,7 +89,8 @@ def crawl(url, visited_links, current_workflow,parent_id):
     # Loop through new links and add them to the current workflow and visited links
     else:
         for link in links:
-            new_url = link.get_attribute('href')
+            new_url = link['href']
+            new_tag = assign_tag(new_url)
             if not new_url.startswith('http'):
                 if not new_url.startswith('/'):
                     new_url='/'+new_url
@@ -93,19 +98,8 @@ def crawl(url, visited_links, current_workflow,parent_id):
             # check if internal link
             if new_url is not None and new_url.startswith(b_url):
                 current_workflow.append(new_url)
-
-                # get a screenshot when a new url is added to the current workflow
-                # driver.get(new_url)
-                # filename = str(count) + '.png'
-                # driver.save_screenshot(filename)
-                # count+=1
-                # driver.implicitly_wait(1)
-                # Recursively crawl the new link
-                # link.click()
-                # get the current url
-                # new_url = driver.current_url
-
-                child = crawl(new_url, visited_links, current_workflow,parent['id'],)
+                # print(link.text)
+                child = crawl(new_url, visited_links, current_workflow,parent['id'],new_tag)
                 parent['children'].append(child)
 
     # remove the parent after all its children are looped through
@@ -117,9 +111,9 @@ def crawl(url, visited_links, current_workflow,parent_id):
 
 # Example usage
 visited_links = set()
-current_workflow = ['http://webdriveruniversity.com/index.html']
+current_workflow = ['https://parabank.parasoft.com/parabank/index.htm']
 
-parent1 = crawl(b_url, visited_links, current_workflow,0)
+parent1 = crawl(b_url, visited_links, current_workflow,0,'home')
 f = open("demo4.json", "a")
 f.write(json.dumps(parent1))
 f.write("\n")
