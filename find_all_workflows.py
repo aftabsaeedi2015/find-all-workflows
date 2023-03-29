@@ -62,6 +62,7 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
     if style_tag is not None:
         style_tag.extract()
      # Create a etree object  from the soup
+
     lxml_tree = etree.fromstring(str(soup))
     a_tags = lxml_tree.findall('.//a')
     if not a_tags:
@@ -102,11 +103,8 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
 
     return parent
 
-
-# Example usage
 visited_links = set()
 current_workflow = ['https://www.demoblaze.com']
-
 parent1 = crawl(b_url, visited_links, current_workflow,0,'home','id','class','xpath')
 f = open("demo4.json", "a")
 f.write(json.dumps(parent1))
