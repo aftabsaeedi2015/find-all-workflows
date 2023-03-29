@@ -50,6 +50,7 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
         visited_links.add(url)
     # Send an HTTP request to the URL and retrieve the response
     # print(url)
+
     response = requests.get(url)
 
     # Parse the HTML content of the response using BeautifulSoup
