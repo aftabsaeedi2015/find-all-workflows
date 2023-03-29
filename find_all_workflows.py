@@ -8,15 +8,13 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from assign_tag import assign_tag
 import uuid
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from lxml import etree
 
 # from screenshot import get_screenshot
 
 
 
-# # Initialize the Selenium web driver
+# Initialize the Selenium web driver
 # service = Service('./chromedriver')
 # chrome_options = Options()
 # chrome_options.add_argument('--headless')
@@ -24,7 +22,7 @@ from selenium.webdriver.support import expected_conditions as EC
 # driver = webdriver.Chrome(options=chrome_options)
 # driver = webdriver.Chrome(service=service)
 
-b_url = 'https://parabank.parasoft.com/parabank/index.htm'
+b_url = 'https://www.demoblaze.com'
 
 
 
@@ -35,6 +33,7 @@ def crawl(url, visited_links, current_workflow,parent_id,tag):
     parent = {
         'id': generate_unique_id(),
         'url': url,
+        'locators':[],
         'tag':tag,
         'parent_id':parent_id,
         'children': []
@@ -72,10 +71,16 @@ def crawl(url, visited_links, current_workflow,parent_id,tag):
     # driver.get(b_url)
     # links = driver.find_elements(By.TAG_NAME, 'a')
 
+    style_tag = soup.find('style')
+    # Remove the style tag if it exists
 
+    if style_tag is not None:
+        style_tag.extract()
      # Create a new object for the parent
-
-
+    lxml_tree = etree.fromstring(str(soup))
+    a_tags = lxml_tree.findall('.//a')
+    for a_tag in a_tags:
+        print(a_tag.attrib['class'])
     # If there are no new links
     if not links:
         # f = open("demo3.json", "a")
@@ -97,8 +102,15 @@ def crawl(url, visited_links, current_workflow,parent_id,tag):
                 new_url = b_url+new_url
             # check if internal link
             if new_url is not None and new_url.startswith(b_url):
+                # e_id = link.get_attribute('id')
+                # e_class = link.get_attribute('class')
+                print('linkk',link)
+                lxml_element = lxml_tree.xpath('//%s[@*="%s"]' % (link.name, link.attrs))
+                root_element = lxml_tree.getroottree().getroot()
+                xpath = root_element.getpath(lxml_element[0])
+                print('xpath ',xpath)
+                html = driver.page_source
                 current_workflow.append(new_url)
-                # print(link.text)
                 child = crawl(new_url, visited_links, current_workflow,parent['id'],new_tag)
                 parent['children'].append(child)
 
@@ -111,7 +123,7 @@ def crawl(url, visited_links, current_workflow,parent_id,tag):
 
 # Example usage
 visited_links = set()
-current_workflow = ['https://parabank.parasoft.com/parabank/index.htm']
+current_workflow = ['https://www.demoblaze.com']
 
 parent1 = crawl(b_url, visited_links, current_workflow,0,'home')
 f = open("demo4.json", "a")

@@ -6,7 +6,7 @@ from difflib import SequenceMatcher
 from extract_path_from_url import get_path
 
 
-tags = ["home", "login", "cart", "about", "contact", "signup","search","others","admin","services","gallery","help",'products',"calender","private policy","staff","resources","portfolio","careers","forum","feedback","partners"]
+tags = ["home", "login", "cart", "about", "contact", "signup","search","others","admin","services","gallery","help",'products',"calender","private policy","resources","careers","forum","feedback"]
 def extract_words(url):
     pattern = r'\b\w+\b'
     words = re.findall(pattern, url)
@@ -32,6 +32,7 @@ def assign_tag(url):
             avg_score = sum(scores) / len(scores)
         else:
             avg_score = 0  # or whatever default value you want to use
+            return 'others'
 
         if avg_score > max_score:
             max_score = avg_score
