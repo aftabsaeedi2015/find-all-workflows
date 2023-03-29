@@ -1,0 +1,1196 @@
+{
+    "id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+    "url": "https://www.demoblaze.com",
+    "locators": [
+        {
+            "id": "id",
+            "class": "class",
+            "xpath": "xpath"
+        }
+    ],
+    "tag": "home",
+    "parent_id": 0,
+    "children": [
+        {
+            "id": "60a077f0-e46c-458d-80ed-343306d80357",
+            "url": "https://www.demoblaze.com/index.html",
+            "locators": [
+                {
+                    "id": "nava",
+                    "class": "navbar-brand",
+                    "xpath": "/html/body/nav/a"
+                }
+            ],
+            "tag": "home",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": [
+                {
+                    "id": "4af51f79-553b-479e-ae2a-7b371d3d8a9e",
+                    "url": "https://www.demoblaze.com/index.html",
+                    "locators": [
+                        {
+                            "id": "nava",
+                            "class": "navbar-brand",
+                            "xpath": "/html/body/nav/a"
+                        }
+                    ],
+                    "tag": "home",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "1a49f6ad-f9c0-4dc5-8330-b11eafb6dcc0",
+                    "url": "https://www.demoblaze.com/index.html",
+                    "locators": [
+                        {
+                            "id": "",
+                            "class": "nav-link",
+                            "xpath": "/html/body/nav/div[1]/ul/li[1]/a"
+                        }
+                    ],
+                    "tag": "home",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                    "url": "https://www.demoblaze.com/#",
+                    "locators": [
+                        {
+                            "id": "",
+                            "class": "nav-link",
+                            "xpath": "/html/body/nav/div[1]/ul/li[2]/a"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": [
+                        {
+                            "id": "f5926fa1-fe03-4a5c-990d-158ebda241c6",
+                            "url": "https://www.demoblaze.com/index.html",
+                            "locators": [
+                                {
+                                    "id": "nava",
+                                    "class": "navbar-brand",
+                                    "xpath": "/html/body/nav/a"
+                                }
+                            ],
+                            "tag": "home",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "496dda53-0e64-4cb4-9746-4874540ae20a",
+                            "url": "https://www.demoblaze.com/index.html",
+                            "locators": [
+                                {
+                                    "id": "",
+                                    "class": "nav-link",
+                                    "xpath": "/html/body/nav/div[1]/ul/li[1]/a"
+                                }
+                            ],
+                            "tag": "home",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "89fb7a54-e6e0-40be-8d01-1ad24dd0b507",
+                            "url": "https://www.demoblaze.com/#",
+                            "locators": [
+                                {
+                                    "id": "",
+                                    "class": "nav-link",
+                                    "xpath": "/html/body/nav/div[1]/ul/li[2]/a"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "94a82f09-95d7-464d-b837-57495b3d8dfe",
+                            "url": "https://www.demoblaze.com/#",
+                            "locators": [
+                                {
+                                    "id": "",
+                                    "class": "nav-link",
+                                    "xpath": "/html/body/nav/div[1]/ul/li[3]/a"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "1bc4850c-9654-45ef-9d6f-353f15fe53b6",
+                            "url": "https://www.demoblaze.com/cart.html",
+                            "locators": [
+                                {
+                                    "id": "cartur",
+                                    "class": "nav-link",
+                                    "xpath": "/html/body/nav/div[1]/ul/li[4]/a"
+                                }
+                            ],
+                            "tag": "cart",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": [
+                                {
+                                    "id": "177d9783-6310-45e4-821f-89e079455628",
+                                    "url": "https://www.demoblaze.com/index.html",
+                                    "locators": [
+                                        {
+                                            "id": "nava",
+                                            "class": "navbar-brand",
+                                            "xpath": "/html/body/nav/div/a"
+                                        }
+                                    ],
+                                    "tag": "home",
+                                    "parent_id": "1bc4850c-9654-45ef-9d6f-353f15fe53b6",
+                                    "children": []
+                                },
+                                {
+                                    "id": "78b2fec4-ed42-4af6-a4dd-448ee24f4a6b",
+                                    "url": "https://www.demoblaze.com/index.html",
+                                    "locators": [
+                                        {
+                                            "id": "",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div/div/ul/li[1]/a"
+                                        }
+                                    ],
+                                    "tag": "home",
+                                    "parent_id": "1bc4850c-9654-45ef-9d6f-353f15fe53b6",
+                                    "children": []
+                                },
+                                {
+                                    "id": "e20e6e3c-ae16-4459-8c37-26f7d81b56cf",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div/div/ul/li[2]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "1bc4850c-9654-45ef-9d6f-353f15fe53b6",
+                                    "children": []
+                                },
+                                {
+                                    "id": "263ab5e9-0235-4a98-a91f-17a93b7c086e",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div/div/ul/li[3]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "1bc4850c-9654-45ef-9d6f-353f15fe53b6",
+                                    "children": []
+                                },
+                                {
+                                    "id": "e1cae531-f980-4ce3-8900-4e8a95a614a7",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div/div/ul/li[4]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "1bc4850c-9654-45ef-9d6f-353f15fe53b6",
+                                    "children": []
+                                },
+                                {
+                                    "id": "1d46a793-3cdc-4693-8185-ec104b78f1e4",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "login2",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div/div/ul/li[5]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "1bc4850c-9654-45ef-9d6f-353f15fe53b6",
+                                    "children": []
+                                },
+                                {
+                                    "id": "6e5799d4-c692-4bf5-8ebf-b8f498a45704",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "logout2",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div/div/ul/li[6]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "1bc4850c-9654-45ef-9d6f-353f15fe53b6",
+                                    "children": []
+                                },
+                                {
+                                    "id": "e079e093-4985-421d-b937-7591ae4f614f",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "nameofuser",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div/div/ul/li[7]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "1bc4850c-9654-45ef-9d6f-353f15fe53b6",
+                                    "children": []
+                                },
+                                {
+                                    "id": "84e34eda-6c14-4c26-9ca8-f67da806672c",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "signin2",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div/div/ul/li[8]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "1bc4850c-9654-45ef-9d6f-353f15fe53b6",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "cdc21fea-aa77-48a9-b935-6da18da0f4e7",
+                            "url": "https://www.demoblaze.com/#",
+                            "locators": [
+                                {
+                                    "id": "login2",
+                                    "class": "nav-link",
+                                    "xpath": "/html/body/nav/div[1]/ul/li[5]/a"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "b7e95812-ee70-49f2-9416-40d45cea7206",
+                            "url": "https://www.demoblaze.com/#",
+                            "locators": [
+                                {
+                                    "id": "logout2",
+                                    "class": "nav-link",
+                                    "xpath": "/html/body/nav/div[1]/ul/li[6]/a"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "c314c9b9-0479-4bc7-af4c-7185c1be3f7f",
+                            "url": "https://www.demoblaze.com/#",
+                            "locators": [
+                                {
+                                    "id": "nameofuser",
+                                    "class": "nav-link",
+                                    "xpath": "/html/body/nav/div[1]/ul/li[7]/a"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "20d9ad38-407d-490d-8239-6e2ad2402a19",
+                            "url": "https://www.demoblaze.com/#",
+                            "locators": [
+                                {
+                                    "id": "signin2",
+                                    "class": "nav-link",
+                                    "xpath": "/html/body/nav/div[1]/ul/li[8]/a"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                            "url": "https://www.demoblaze.com/#carouselExampleIndicators",
+                            "locators": [
+                                {
+                                    "id": "",
+                                    "class": "carousel-control-prev",
+                                    "xpath": "/html/body/nav/div[2]/div/a[1]"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": [
+                                {
+                                    "id": "fa5a43f5-dee8-4d1a-9897-4183a62f98b8",
+                                    "url": "https://www.demoblaze.com/index.html",
+                                    "locators": [
+                                        {
+                                            "id": "nava",
+                                            "class": "navbar-brand",
+                                            "xpath": "/html/body/nav/a"
+                                        }
+                                    ],
+                                    "tag": "home",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "364ce8f4-1f16-4000-98cc-159f4f640a70",
+                                    "url": "https://www.demoblaze.com/index.html",
+                                    "locators": [
+                                        {
+                                            "id": "",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div[1]/ul/li[1]/a"
+                                        }
+                                    ],
+                                    "tag": "home",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "c6406f22-f3e4-4cf1-8a37-80108aaf70ca",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div[1]/ul/li[2]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "93bc3299-48d2-44ef-85ef-a91740a8640c",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div[1]/ul/li[3]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "a4657b82-a0dd-4831-b2a3-3824b93a2d33",
+                                    "url": "https://www.demoblaze.com/cart.html",
+                                    "locators": [
+                                        {
+                                            "id": "cartur",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div[1]/ul/li[4]/a"
+                                        }
+                                    ],
+                                    "tag": "cart",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "6af04b20-e51b-47a0-9fb7-5eb8be70adb4",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "login2",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div[1]/ul/li[5]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "f5aab04b-9e8a-48a9-b0dd-5fc089162645",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "logout2",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div[1]/ul/li[6]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "199b0560-4c49-4620-98a7-3d1e20e60840",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "nameofuser",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div[1]/ul/li[7]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "c75e1c36-ee7d-4363-94fb-f192284e9659",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "signin2",
+                                            "class": "nav-link",
+                                            "xpath": "/html/body/nav/div[1]/ul/li[8]/a"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "72ac9c69-fe77-43cc-ab56-c0150bb162bd",
+                                    "url": "https://www.demoblaze.com/#carouselExampleIndicators",
+                                    "locators": [
+                                        {
+                                            "id": "",
+                                            "class": "carousel-control-prev",
+                                            "xpath": "/html/body/nav/div[2]/div/a[1]"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "89e5adfb-5834-4923-8d35-c415bb05a757",
+                                    "url": "https://www.demoblaze.com/#carouselExampleIndicators",
+                                    "locators": [
+                                        {
+                                            "id": "",
+                                            "class": "carousel-control-next",
+                                            "xpath": "/html/body/nav/div[2]/div/a[2]"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                    "url": "https://www.demoblaze.com/",
+                                    "locators": [
+                                        {
+                                            "id": "cat",
+                                            "class": "list-group-item",
+                                            "xpath": "/html/body/div[5]/div/div[1]/div/a[1]"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": [
+                                        {
+                                            "id": "7669cf63-9267-466d-8ada-eba0fa0d49bf",
+                                            "url": "https://www.demoblaze.com/index.html",
+                                            "locators": [
+                                                {
+                                                    "id": "nava",
+                                                    "class": "navbar-brand",
+                                                    "xpath": "/html/body/nav/a"
+                                                }
+                                            ],
+                                            "tag": "home",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "601c6008-b2c9-46c5-b4aa-bfd682ebfa56",
+                                            "url": "https://www.demoblaze.com/index.html",
+                                            "locators": [
+                                                {
+                                                    "id": "",
+                                                    "class": "nav-link",
+                                                    "xpath": "/html/body/nav/div[1]/ul/li[1]/a"
+                                                }
+                                            ],
+                                            "tag": "home",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "1ad89486-9e21-441c-99f5-b068a2be4a7e",
+                                            "url": "https://www.demoblaze.com/#",
+                                            "locators": [
+                                                {
+                                                    "id": "",
+                                                    "class": "nav-link",
+                                                    "xpath": "/html/body/nav/div[1]/ul/li[2]/a"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "ed11a333-d699-4843-b2ab-b7519377d8eb",
+                                            "url": "https://www.demoblaze.com/#",
+                                            "locators": [
+                                                {
+                                                    "id": "",
+                                                    "class": "nav-link",
+                                                    "xpath": "/html/body/nav/div[1]/ul/li[3]/a"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "6d1d722e-cbf9-4d89-8724-6480f6bac984",
+                                            "url": "https://www.demoblaze.com/cart.html",
+                                            "locators": [
+                                                {
+                                                    "id": "cartur",
+                                                    "class": "nav-link",
+                                                    "xpath": "/html/body/nav/div[1]/ul/li[4]/a"
+                                                }
+                                            ],
+                                            "tag": "cart",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "9cd86c65-263d-48a0-a546-d8de93664864",
+                                            "url": "https://www.demoblaze.com/#",
+                                            "locators": [
+                                                {
+                                                    "id": "login2",
+                                                    "class": "nav-link",
+                                                    "xpath": "/html/body/nav/div[1]/ul/li[5]/a"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "78f014ec-4a0f-4107-bc6a-511f997e29ec",
+                                            "url": "https://www.demoblaze.com/#",
+                                            "locators": [
+                                                {
+                                                    "id": "logout2",
+                                                    "class": "nav-link",
+                                                    "xpath": "/html/body/nav/div[1]/ul/li[6]/a"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "481c19c5-3f3f-47d8-b127-da3c79b102a5",
+                                            "url": "https://www.demoblaze.com/#",
+                                            "locators": [
+                                                {
+                                                    "id": "nameofuser",
+                                                    "class": "nav-link",
+                                                    "xpath": "/html/body/nav/div[1]/ul/li[7]/a"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "ca346e92-5c22-4850-8fbb-423604eb20c4",
+                                            "url": "https://www.demoblaze.com/#",
+                                            "locators": [
+                                                {
+                                                    "id": "signin2",
+                                                    "class": "nav-link",
+                                                    "xpath": "/html/body/nav/div[1]/ul/li[8]/a"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "aaf8653d-7038-4465-ab22-49c955d228ca",
+                                            "url": "https://www.demoblaze.com/#carouselExampleIndicators",
+                                            "locators": [
+                                                {
+                                                    "id": "",
+                                                    "class": "carousel-control-prev",
+                                                    "xpath": "/html/body/nav/div[2]/div/a[1]"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "82babbab-fd0b-494b-b9ef-dbb69e77aa38",
+                                            "url": "https://www.demoblaze.com/#carouselExampleIndicators",
+                                            "locators": [
+                                                {
+                                                    "id": "",
+                                                    "class": "carousel-control-next",
+                                                    "xpath": "/html/body/nav/div[2]/div/a[2]"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "e60783f7-0116-4034-b7ca-c422d979c45f",
+                                            "url": "https://www.demoblaze.com/",
+                                            "locators": [
+                                                {
+                                                    "id": "cat",
+                                                    "class": "list-group-item",
+                                                    "xpath": "/html/body/div[5]/div/div[1]/div/a[1]"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "878cbfbc-0609-43f7-aa8a-bd484daa262b",
+                                            "url": "https://www.demoblaze.com/#",
+                                            "locators": [
+                                                {
+                                                    "id": "itemc",
+                                                    "class": "list-group-item",
+                                                    "xpath": "/html/body/div[5]/div/div[1]/div/a[2]"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "a1796165-d5d3-4e16-b269-84e31a89a48c",
+                                            "url": "https://www.demoblaze.com/#",
+                                            "locators": [
+                                                {
+                                                    "id": "itemc",
+                                                    "class": "list-group-item",
+                                                    "xpath": "/html/body/div[5]/div/div[1]/div/a[3]"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": "57ac1b5e-aede-4ffc-97c7-4ffa39465d59",
+                                            "url": "https://www.demoblaze.com/#",
+                                            "locators": [
+                                                {
+                                                    "id": "itemc",
+                                                    "class": "list-group-item",
+                                                    "xpath": "/html/body/div[5]/div/div[1]/div/a[4]"
+                                                }
+                                            ],
+                                            "tag": "others",
+                                            "parent_id": "c471341d-4c0e-40fb-928c-d1abcef00ffd",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "e218d39b-0f9e-4933-b114-16da7578c4a0",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "itemc",
+                                            "class": "list-group-item",
+                                            "xpath": "/html/body/div[5]/div/div[1]/div/a[2]"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "073acb51-d70a-45b3-9749-07be01fb56dd",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "itemc",
+                                            "class": "list-group-item",
+                                            "xpath": "/html/body/div[5]/div/div[1]/div/a[3]"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                },
+                                {
+                                    "id": "6ba8c7be-b5eb-4af6-b6b6-68e0a8375aaf",
+                                    "url": "https://www.demoblaze.com/#",
+                                    "locators": [
+                                        {
+                                            "id": "itemc",
+                                            "class": "list-group-item",
+                                            "xpath": "/html/body/div[5]/div/div[1]/div/a[4]"
+                                        }
+                                    ],
+                                    "tag": "others",
+                                    "parent_id": "f5ec2518-d73b-468c-b2cc-1f9e52da24f7",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5f4fa7fa-6e07-4bb9-9ab5-a48ee9b05dc3",
+                            "url": "https://www.demoblaze.com/#carouselExampleIndicators",
+                            "locators": [
+                                {
+                                    "id": "",
+                                    "class": "carousel-control-next",
+                                    "xpath": "/html/body/nav/div[2]/div/a[2]"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "978218a5-6ea2-4ce9-9fc0-79c997f805a5",
+                            "url": "https://www.demoblaze.com/",
+                            "locators": [
+                                {
+                                    "id": "cat",
+                                    "class": "list-group-item",
+                                    "xpath": "/html/body/div[5]/div/div[1]/div/a[1]"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "983aab66-3b3d-49b8-b02e-8ce43e952b65",
+                            "url": "https://www.demoblaze.com/#",
+                            "locators": [
+                                {
+                                    "id": "itemc",
+                                    "class": "list-group-item",
+                                    "xpath": "/html/body/div[5]/div/div[1]/div/a[2]"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "f5bfc137-ef45-406b-86fd-0c192b2f3f38",
+                            "url": "https://www.demoblaze.com/#",
+                            "locators": [
+                                {
+                                    "id": "itemc",
+                                    "class": "list-group-item",
+                                    "xpath": "/html/body/div[5]/div/div[1]/div/a[3]"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        },
+                        {
+                            "id": "4c36284a-47e0-4306-a698-6b61fa77ce6e",
+                            "url": "https://www.demoblaze.com/#",
+                            "locators": [
+                                {
+                                    "id": "itemc",
+                                    "class": "list-group-item",
+                                    "xpath": "/html/body/div[5]/div/div[1]/div/a[4]"
+                                }
+                            ],
+                            "tag": "others",
+                            "parent_id": "415665df-6c4e-463f-ad3c-0ae884b70bf1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "7d4d834e-1d31-4842-9999-97d89a975895",
+                    "url": "https://www.demoblaze.com/#",
+                    "locators": [
+                        {
+                            "id": "",
+                            "class": "nav-link",
+                            "xpath": "/html/body/nav/div[1]/ul/li[3]/a"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "04c1a0bf-f641-4bde-a742-5a0803c0084b",
+                    "url": "https://www.demoblaze.com/cart.html",
+                    "locators": [
+                        {
+                            "id": "cartur",
+                            "class": "nav-link",
+                            "xpath": "/html/body/nav/div[1]/ul/li[4]/a"
+                        }
+                    ],
+                    "tag": "cart",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "e9b1153c-9b37-483c-aa85-ce2ce86e57c2",
+                    "url": "https://www.demoblaze.com/#",
+                    "locators": [
+                        {
+                            "id": "login2",
+                            "class": "nav-link",
+                            "xpath": "/html/body/nav/div[1]/ul/li[5]/a"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "f85fcdd6-696a-425e-a2e2-f7d2ad5b2387",
+                    "url": "https://www.demoblaze.com/#",
+                    "locators": [
+                        {
+                            "id": "logout2",
+                            "class": "nav-link",
+                            "xpath": "/html/body/nav/div[1]/ul/li[6]/a"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "7c0445de-f2d8-4e5e-b575-f7d736fe47ee",
+                    "url": "https://www.demoblaze.com/#",
+                    "locators": [
+                        {
+                            "id": "nameofuser",
+                            "class": "nav-link",
+                            "xpath": "/html/body/nav/div[1]/ul/li[7]/a"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "38e17bd2-26c0-4e62-9375-29774f6392b5",
+                    "url": "https://www.demoblaze.com/#",
+                    "locators": [
+                        {
+                            "id": "signin2",
+                            "class": "nav-link",
+                            "xpath": "/html/body/nav/div[1]/ul/li[8]/a"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "96497dfa-1b86-4f27-8295-c84a9dfa8d20",
+                    "url": "https://www.demoblaze.com/#carouselExampleIndicators",
+                    "locators": [
+                        {
+                            "id": "",
+                            "class": "carousel-control-prev",
+                            "xpath": "/html/body/nav/div[2]/div/a[1]"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "5c9cab43-bc89-4df7-9ffa-e1fb6cb42137",
+                    "url": "https://www.demoblaze.com/#carouselExampleIndicators",
+                    "locators": [
+                        {
+                            "id": "",
+                            "class": "carousel-control-next",
+                            "xpath": "/html/body/nav/div[2]/div/a[2]"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "7f2d4533-3040-4389-b07d-dac17db3f031",
+                    "url": "https://www.demoblaze.com/",
+                    "locators": [
+                        {
+                            "id": "cat",
+                            "class": "list-group-item",
+                            "xpath": "/html/body/div[5]/div/div[1]/div/a[1]"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "3d1e5138-8131-4777-90a3-bc5bf1ed1cbd",
+                    "url": "https://www.demoblaze.com/#",
+                    "locators": [
+                        {
+                            "id": "itemc",
+                            "class": "list-group-item",
+                            "xpath": "/html/body/div[5]/div/div[1]/div/a[2]"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "1ac07ed8-60d7-4777-9fc0-cbccb04a3e36",
+                    "url": "https://www.demoblaze.com/#",
+                    "locators": [
+                        {
+                            "id": "itemc",
+                            "class": "list-group-item",
+                            "xpath": "/html/body/div[5]/div/div[1]/div/a[3]"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                },
+                {
+                    "id": "6c2534eb-34e9-4276-a81a-d7f4f724cfa8",
+                    "url": "https://www.demoblaze.com/#",
+                    "locators": [
+                        {
+                            "id": "itemc",
+                            "class": "list-group-item",
+                            "xpath": "/html/body/div[5]/div/div[1]/div/a[4]"
+                        }
+                    ],
+                    "tag": "others",
+                    "parent_id": "60a077f0-e46c-458d-80ed-343306d80357",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": "7fc015f6-da30-4265-bb08-92c2d53c806e",
+            "url": "https://www.demoblaze.com/index.html",
+            "locators": [
+                {
+                    "id": "",
+                    "class": "nav-link",
+                    "xpath": "/html/body/nav/div[1]/ul/li[1]/a"
+                }
+            ],
+            "tag": "home",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "27915319-dc1c-4c39-953a-9937a5cbc986",
+            "url": "https://www.demoblaze.com/#",
+            "locators": [
+                {
+                    "id": "",
+                    "class": "nav-link",
+                    "xpath": "/html/body/nav/div[1]/ul/li[2]/a"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "0146cf9b-56be-4099-88be-c9563254ea78",
+            "url": "https://www.demoblaze.com/#",
+            "locators": [
+                {
+                    "id": "",
+                    "class": "nav-link",
+                    "xpath": "/html/body/nav/div[1]/ul/li[3]/a"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "abe77d44-a793-4de3-958a-3f28ff5f2916",
+            "url": "https://www.demoblaze.com/cart.html",
+            "locators": [
+                {
+                    "id": "cartur",
+                    "class": "nav-link",
+                    "xpath": "/html/body/nav/div[1]/ul/li[4]/a"
+                }
+            ],
+            "tag": "cart",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "277745e1-f40e-4386-959a-a12ea31a3a5d",
+            "url": "https://www.demoblaze.com/#",
+            "locators": [
+                {
+                    "id": "login2",
+                    "class": "nav-link",
+                    "xpath": "/html/body/nav/div[1]/ul/li[5]/a"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "8972bc4f-35bc-48f6-a4c5-0ccb06f8540d",
+            "url": "https://www.demoblaze.com/#",
+            "locators": [
+                {
+                    "id": "logout2",
+                    "class": "nav-link",
+                    "xpath": "/html/body/nav/div[1]/ul/li[6]/a"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "c7c931e9-598c-4978-a06d-8f5446eb7b4d",
+            "url": "https://www.demoblaze.com/#",
+            "locators": [
+                {
+                    "id": "nameofuser",
+                    "class": "nav-link",
+                    "xpath": "/html/body/nav/div[1]/ul/li[7]/a"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "1669f7ba-86c4-41d2-9e69-e831725914a5",
+            "url": "https://www.demoblaze.com/#",
+            "locators": [
+                {
+                    "id": "signin2",
+                    "class": "nav-link",
+                    "xpath": "/html/body/nav/div[1]/ul/li[8]/a"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "086f0e18-06c3-4e0f-8047-3f66818edf27",
+            "url": "https://www.demoblaze.com/#carouselExampleIndicators",
+            "locators": [
+                {
+                    "id": "",
+                    "class": "carousel-control-prev",
+                    "xpath": "/html/body/nav/div[2]/div/a[1]"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "b26b19fb-386e-415b-98ab-9682b7727899",
+            "url": "https://www.demoblaze.com/#carouselExampleIndicators",
+            "locators": [
+                {
+                    "id": "",
+                    "class": "carousel-control-next",
+                    "xpath": "/html/body/nav/div[2]/div/a[2]"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "13665a8e-9653-40b8-9a55-64096dfbf84f",
+            "url": "https://www.demoblaze.com/",
+            "locators": [
+                {
+                    "id": "cat",
+                    "class": "list-group-item",
+                    "xpath": "/html/body/div[5]/div/div[1]/div/a[1]"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "861d3a36-2b0f-4d34-9d19-d825c9d2af3f",
+            "url": "https://www.demoblaze.com/#",
+            "locators": [
+                {
+                    "id": "itemc",
+                    "class": "list-group-item",
+                    "xpath": "/html/body/div[5]/div/div[1]/div/a[2]"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "f8ed53b8-7eeb-495e-88a5-034f41541057",
+            "url": "https://www.demoblaze.com/#",
+            "locators": [
+                {
+                    "id": "itemc",
+                    "class": "list-group-item",
+                    "xpath": "/html/body/div[5]/div/div[1]/div/a[3]"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        },
+        {
+            "id": "dc0a012f-50a3-49f2-a3f5-7c2ffa8f93f4",
+            "url": "https://www.demoblaze.com/#",
+            "locators": [
+                {
+                    "id": "itemc",
+                    "class": "list-group-item",
+                    "xpath": "/html/body/div[5]/div/div[1]/div/a[4]"
+                }
+            ],
+            "tag": "others",
+            "parent_id": "fc89e21f-3541-4864-8fd9-7afbd17727c5",
+            "children": []
+        }
+    ]
+}
