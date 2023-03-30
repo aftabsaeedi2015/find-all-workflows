@@ -7,6 +7,6 @@ def get_path(url):
     return path
 
 # Example usage:
-url = 'https://www.anything.com/actions/Catalog.action?viewProduct=&productId=FL-DSH-01'
+url = 'https://www.anything.com/login/index.html'
 path = get_path(url)
 print(path)

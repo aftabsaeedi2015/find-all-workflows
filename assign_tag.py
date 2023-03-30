@@ -20,9 +20,7 @@ def word_similarity(word1, word2):
         similarity = SequenceMatcher(None, word1, word2).ratio()
     return similarity
 def assign_tag(url):
-    print(url)
     url = get_path(url)
-    print(url)
     words = extract_words(url)
     max_score = 0
     tag = None
@@ -40,7 +38,7 @@ def assign_tag(url):
     return tag
 
 
-url = "Login-Portal/index.html"
+url = "login.htm;jsessionid=6A8AA7FF93634FBDF0BB47F7C6830BFC"
 words = extract_words(url)
 print("Words:", words)
 for tag in tags:
