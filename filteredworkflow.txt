@@ -1,0 +1,7 @@
+[['home', 'admin', 'home', 'about'],
+ ['home', 'admin', 'home', 'about', 'home'],
+  ['home', 'admin', 'home', 'about', 'home', 'admin'],
+   ['home', 'admin', 'home', 'about', 'home', 'admin', 'contact'],
+    ['home', 'admin', 'home', 'about', 'home', 'admin', 'contact', 'search'],
+     ['home', 'admin', 'home', 'about', 'home', 'admin', 'contact', 'search', 'home'],
+      ['home', 'admin', 'home', 'about', 'home', 'admin', 'contact', 'search', 'home', 'home']]

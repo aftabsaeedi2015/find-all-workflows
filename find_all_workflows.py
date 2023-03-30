@@ -43,22 +43,22 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
         'children': []
     }
     if url in visited_links:
+        print("in parent if")
         # Remove the current link from the current workflow and return
         if(len(current_workflow)!=0):
             current_workflow.pop()
             # if it is a login workflow store it
 
             if(check_tag_exists(current_workflow,'about')):
+                print("write to file in if")
                 result = convert_url_to_tags(current_workflow)
-                f = open("about.txt", "a")
-                f.write(str(result))
-                f.write(str(current_workflow))
-                f.write("\n")
-                f.close()
+                if result not in filtered_workflow:
+                    filtered_workflow.append(result)
         return parent
 
     # Add the URL to the set of visited links
     else:
+        print("in parent else")
         visited_links.add(url)
     # Send an HTTP request to the URL and retrieve the response
     # print(url)
@@ -80,15 +80,14 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
         lxml_tree = etree.fromstring(str(soup).strip())
         a_tags = lxml_tree.findall('.//a')
         if not a_tags:
+            print("if no tags found")
             if(len(current_workflow)!=0):
                 current_workflow.pop()
                 if(check_tag_exists(current_workflow,'about')):
+                    print("write to file in else")
                     result = convert_url_to_tags()
-                    f = open("about.txt", "a")
-                    f.write(str(result))
-                    f.write(str(current_workflow))
-                    f.write("\n")
-                    f.close()
+                    if result not in filtered_workflow:
+                        filtered_workflow.append(result)
             return parent
 
         # Loop through new links and add them to the current workflow and visited links
@@ -122,15 +121,16 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
     return parent
 
 visited_links = set()
+filtered_workflow = []
 current_workflow = ['/parabank/index.htm']
 parent1 = crawl(b_url, visited_links, current_workflow,0,'home','id','class','xpath')
-f = open("demo4.json", "a")
+f = open("demo5.json", "a")
 f.write(json.dumps(parent1))
 f.write("\n")
 f.close()
 
-f = open("visitedlinks.txt", "a")
-f.write(str(visited_links))
+f = open("filteredworkflow.txt", "a")
+f.write(str(filtered_workflow))
 f.write("\n")
 f.close()
 
