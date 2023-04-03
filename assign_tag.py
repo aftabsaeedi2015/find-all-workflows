@@ -38,7 +38,7 @@ def assign_tag(url):
     return tag
 
 
-url = "login.htm;jsessionid=6A8AA7FF93634FBDF0BB47F7C6830BFC"
+url = "signinindex.html"
 words = extract_words(url)
 print("Words:", words)
 for tag in tags:

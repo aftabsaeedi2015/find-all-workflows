@@ -121,7 +121,7 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
     return parent
 
 visited_links = set()
-filtered_workflow = []
+
 current_workflow = ['/parabank/index.htm']
 parent1 = crawl(b_url, visited_links, current_workflow,0,'home','id','class','xpath')
 f = open("demo5.json", "a")
