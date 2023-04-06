@@ -7,11 +7,12 @@ from urllib.parse import urlparse
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from assign_tag import assign_tag
-from check_tag_exists import check_tag_exists
-from check_tag_exists import convert_url_to_tags
+from assign_tag import check_tag_exists
+from assign_tag import convert_url_to_tags
 from valid_url import check_url
 import uuid
 from lxml import etree
+import re
 
 # from screenshot import get_screenshot
 
@@ -33,7 +34,7 @@ def generate_unique_id():
     return str(uuid.uuid4())
 login = False
 def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpath):
-    login = False
+
     parent = {
         'id': generate_unique_id(),
         'url': url,
@@ -43,23 +44,24 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
         'children': []
     }
     if url in visited_links:
-        print("in parent if")
+        print("visited")
         # Remove the current link from the current workflow and return
         if(len(current_workflow)!=0):
-            current_workflow.pop()
             # if it is a login workflow store it
-
-            if(check_tag_exists(current_workflow,'about')):
-                print("write to file in if")
-                result = convert_url_to_tags(current_workflow)
-                if result not in filtered_workflow:
-                    filtered_workflow.append(result)
+            for key in filtered_workflow.keys():
+                if(check_tag_exists(current_workflow,key)):
+                    result = convert_url_to_tags(current_workflow[2:])
+                    print(result)
+                    if result not in filtered_workflow[key]:
+                        filtered_workflow[key].append(result)
+                        print(current_workflow)
+            current_workflow.pop()
+        visited_links.pop()
         return parent
 
     # Add the URL to the set of visited links
     else:
-        print("in parent else")
-        visited_links.add(url)
+
     # Send an HTTP request to the URL and retrieve the response
     # print(url)
 
@@ -80,14 +82,15 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
         lxml_tree = etree.fromstring(str(soup).strip())
         a_tags = lxml_tree.findall('.//a')
         if not a_tags:
-            print("if no tags found")
             if(len(current_workflow)!=0):
+                for key in filtered_workflow.keys():
+                    if(check_tag_exists(current_workflow,key)):
+                        result = convert_url_to_tags(current_workflow[2:])
+                        if result not in filtered_workflow[key]:
+                            filtered_workflow[key].append(result)
                 current_workflow.pop()
-                if(check_tag_exists(current_workflow,'about')):
-                    print("write to file in else")
-                    result = convert_url_to_tags()
-                    if result not in filtered_workflow:
-                        filtered_workflow.append(result)
+            visited_links.pop()
+
             return parent
 
         # Loop through new links and add them to the current workflow and visited links
@@ -101,7 +104,14 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
                 # check if internal link
                 if new_url is not None and new_url.startswith(b_url):
                     url_for_workflow = new_url.replace(b_url,'')
+
+                    # remove session id from url
+                    session_id_removed = re.sub(r'[;&]jsessionid=[A-Za-z0-9]+', '', url_for_workflow)
+                    additional_word_removed = session_id_removed.replace('/parabank','')
+                    url_for_workflow = re.sub(r'\?(?=.*&)?(sessionid=\d+&?)', '', additional_word_removed)
+
                     current_workflow.append(url_for_workflow)
+                    visited_links.append(url)
                     # check if attribute exists
                     e_id=''
                     e_class=''
@@ -117,19 +127,19 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
     # remove the parent after all its children are looped through
     if(len(current_workflow)!=0):
         current_workflow.pop()
-
+    visited_links.pop()
     return parent
 
-visited_links = set()
-
-current_workflow = ['/parabank/index.htm']
+visited_links = []
+filtered_workflow = {'about':[],'contact':[],'search':[],'services':[],'register':[]}
+current_workflow = ['/index.htm']
 parent1 = crawl(b_url, visited_links, current_workflow,0,'home','id','class','xpath')
 f = open("demo5.json", "a")
 f.write(json.dumps(parent1))
 f.write("\n")
 f.close()
 
-f = open("filteredworkflow.txt", "a")
+f = open("filteredworkflow1.json", "a")
 f.write(str(filtered_workflow))
 f.write("\n")
 f.close()

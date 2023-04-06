@@ -4,12 +4,79 @@ nltk.download('wordnet')
 from nltk.corpus import wordnet
 from difflib import SequenceMatcher
 from extract_path_from_url import get_path
+from urllib.parse import urlparse
 
 
-tags = ["home", "login", "cart", "about", "contact", "signup","search","others","admin","services","gallery","help",'products',"calender","private policy","resources","careers","forum","feedback"]
+
+
+tags = ["home", "login", "about", "contact", "signup","search","admin",'product',"services",'register','sitemap']
+
+
+patterns = {
+    'home': ['index', 'home', 'main'],
+    'cart': ['cart', 'basket'],
+    'product': ['product', 'item', 'detail'],
+    'about': ['about', 'company', 'team'],
+    'search': ['search', 'find'],
+    'login':['signin','login','sign-in']
+}
+
+b_url = 'https://demo.opencart.com'
+
+
+def check_tag_exists(workflow,tag):
+    is_about_tag = False
+    for url in workflow:
+        # first assign tags manually if possible
+        if(assign_tag_manually(url)=='other'):
+            if assign_tag(url)==tag:
+                is_about_tag = True
+        else:
+            if assign_tag_manually(url)==tag:
+                is_about_tag= True
+    return is_about_tag
+
+def convert_url_to_tags(workflow):
+    workflow_tags = []
+    for url in workflow:
+        # first assign tag manually if possible
+        if assign_tag_manually(url)=='other':
+            workflow_tags.append(assign_tag(url))
+        else:
+            workflow_tags.append(assign_tag_manually(url))
+    return workflow_tags
+
+
+def assign_tag_manually(url):
+    if(type(url)!=list):
+        path = url.lower().split('/')
+        # remove the leading slash
+        path = path[1:]
+    else:
+        path = url
+
+    # Check if any of the patterns match the path
+    if len(path)>=2:
+        return 'other'
+    else:
+        for category, keywords in patterns.items():
+            if any(keyword in path for keyword in keywords):
+                return category
+
+    # If no pattern matches, return "other"
+    return 'other'
+
+
+
 def extract_words(url):
     pattern = r'\b\w+\b'
-    words = re.findall(pattern, url)
+    match = re.search(r'\.\w+$', url)
+    if match:
+        extension = match.group()
+        extensions_removed = url.replace(extension,'')
+    else:
+        extensions_removed = url
+    words = re.findall(pattern, extensions_removed)
     return words
 def word_similarity(word1, word2):
     synsets1 = wordnet.synsets(word1)
@@ -22,6 +89,10 @@ def word_similarity(word1, word2):
 def assign_tag(url):
     url = get_path(url)
     words = extract_words(url)
+    # first assign tag manually
+    manually_assigned_tag = assign_tag_manually(words)
+    if(manually_assigned_tag!='other'):
+        return manually_assigned_tag
     max_score = 0
     tag = None
     for t in tags:
@@ -38,7 +109,7 @@ def assign_tag(url):
     return tag
 
 
-url = "signinindex.html"
+url = "/index.htm"
 words = extract_words(url)
 print("Words:", words)
 for tag in tags:

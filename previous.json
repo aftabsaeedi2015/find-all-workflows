@@ -1,0 +1,344 @@
+{'login': [], 'about': [
+    ['home', 'about', 'admin'
+    ],
+    [],
+    ['home', 'about', 'home'
+    ],
+    [],
+    ['home', 'about', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'signup'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'signup'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'signup'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'signup'
+    ],
+    [],
+    ['home', 'about', 'services', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'signup'
+    ],
+    [],
+    ['home', 'about', 'contact'
+    ],
+    [],
+    ['home', 'about', 'search'
+    ],
+    [],
+    ['home', 'about', 'services'
+    ],
+    [],
+    ['home', 'about', 'signup'
+    ],
+    [],
+    ['home', 'about'
+    ],
+    [],
+    ['about'
+    ],
+    [],
+    [],
+    []
+], 'contact': [
+    ['home', 'about', 'services', 'admin', 'contact', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'signup'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'signup'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'signup'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'contact'
+    ],
+    [],
+    ['home', 'about', 'contact'
+    ],
+    [],
+    ['home', 'contact'
+    ],
+    [],
+    ['contact'
+    ],
+    [],
+    [],
+    [],
+    ['admin'
+    ],
+    [],
+    ['home'
+    ],
+    [],
+    ['about'
+    ],
+    [],
+    ['services'
+    ],
+    [],
+    ['search'
+    ],
+    [],
+    ['signup'
+    ],
+    []
+], 'search': [
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'admin'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'home'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'about'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'services'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'contact'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'contact', 'signup', 'signup'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'contact', 'search', 'signup'
+    ],
+    [],
+    ['home', 'about', 'services', 'admin', 'search'
+    ],
+    [],
+    ['home', 'about', 'services', 'search'
+    ],
+    [],
+    ['home', 'about', 'search'
+    ],
+    [],
+    ['home', 'search'
+    ],
+    [],
+    ['search'
+    ],
+    [],
+    [],
+    []
+]
+}
