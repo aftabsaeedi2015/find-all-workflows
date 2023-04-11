@@ -21,12 +21,16 @@ patterns = {
     'login':['signin','login','sign-in']
 }
 
-b_url = 'https://demo.opencart.com'
+b_url = 'https://demo-website-drab-three.vercel.app'
 
 
 def check_tag_exists(workflow,tag):
     is_about_tag = False
     for url in workflow:
+        # remove session id from url
+        url_for_workflow = url.replace(b_url,'')
+        session_id_removed = re.sub(r'[;&]jsessionid=[A-Za-z0-9]+', '', url_for_workflow)
+        url = re.sub(r'\?(?=.*&)?(sessionid=\d+&?)', '', session_id_removed)
         # first assign tags manually if possible
         if(assign_tag_manually(url)=='other'):
             if assign_tag(url)==tag:
@@ -39,6 +43,10 @@ def check_tag_exists(workflow,tag):
 def convert_url_to_tags(workflow):
     workflow_tags = []
     for url in workflow:
+        # remove session id from url
+        url_for_workflow = url.replace(b_url,'')
+        session_id_removed = re.sub(r'[;&]jsessionid=[A-Za-z0-9]+', '', url_for_workflow)
+        url = re.sub(r'\?(?=.*&)?(sessionid=\d+&?)', '', session_id_removed)
         # first assign tag manually if possible
         if assign_tag_manually(url)=='other':
             workflow_tags.append(assign_tag(url))
@@ -69,6 +77,10 @@ def assign_tag_manually(url):
 
 
 def extract_words(url):
+    # remove session id from url
+    url_for_workflow = url.replace(b_url,'')
+    session_id_removed = re.sub(r'[;&]jsessionid=[A-Za-z0-9]+', '', url_for_workflow)
+    url = re.sub(r'\?(?=.*&)?(sessionid=\d+&?)', '', session_id_removed)
     pattern = r'\b\w+\b'
     match = re.search(r'\.\w+$', url)
     if match:
@@ -89,6 +101,8 @@ def word_similarity(word1, word2):
 def assign_tag(url):
     url = get_path(url)
     words = extract_words(url)
+    if not words:
+        return "home"
     # first assign tag manually
     manually_assigned_tag = assign_tag_manually(words)
     if(manually_assigned_tag!='other'):
@@ -109,7 +123,7 @@ def assign_tag(url):
     return tag
 
 
-url = "/index.htm"
+url = "https://demo-website-drab-three.vercel.app/about.html"
 words = extract_words(url)
 print("Words:", words)
 for tag in tags:
