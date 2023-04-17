@@ -123,7 +123,7 @@ def assign_tag(url):
     return tag
 
 
-url = "https://demo-website-drab-three.vercel.app/about.html"
+url = "https://demo-website-drab-three.vercel.app/hey/about.html"
 words = extract_words(url)
 print("Words:", words)
 for tag in tags:

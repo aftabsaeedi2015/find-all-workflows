@@ -1,0 +1,37 @@
+{
+    "index": [
+        "https://demo-website-drab-three.vercel.app/index.html",
+        "https://demo-website-drab-three.vercel.app/index.html"
+    ],
+    "about": [
+        "https://demo-website-drab-three.vercel.app/index.html",
+        "https://demo-website-drab-three.vercel.app/about.html",
+        "https://demo-website-drab-three.vercel.app/index.html"
+    ],
+    "shoppingcart": [
+        "https://demo-website-drab-three.vercel.app/index.html",
+        "https://demo-website-drab-three.vercel.app/shoppingcart.html",
+        "https://demo-website-drab-three.vercel.app/index.html"
+    ],
+    "contact": [
+        "https://demo-website-drab-three.vercel.app/index.html",
+        "https://demo-website-drab-three.vercel.app/contact.html",
+        "https://demo-website-drab-three.vercel.app/index.html"
+    ],
+    "login": [
+        "https://demo-website-drab-three.vercel.app/index.html",
+        "https://demo-website-drab-three.vercel.app/login.html",
+        "https://demo-website-drab-three.vercel.app/index.html"
+    ],
+    "signup": [
+        "https://demo-website-drab-three.vercel.app/index.html",
+        "https://demo-website-drab-three.vercel.app/login.html",
+        "https://demo-website-drab-three.vercel.app/signup.html",
+        "https://demo-website-drab-three.vercel.app/index.html"
+    ],
+    "null": [
+        "https://demo-website-drab-three.vercel.app/index.html",
+        "https://demo-website-drab-three.vercel.app/#",
+        "https://demo-website-drab-three.vercel.app/index.html"
+    ]
+}

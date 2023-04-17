@@ -32,9 +32,8 @@ b_url = 'https://demo-website-drab-three.vercel.app'
 
 def generate_unique_id():
     return str(uuid.uuid4())
-login = False
+
 def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpath):
-    print(url)
     parent = {
         'id': generate_unique_id(),
         'url': url,
@@ -44,26 +43,15 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
         'children': []
     }
     if url in current_workflow and  current_workflow.count(url)>1:
-        print("visited")
-        print(current_workflow)
         # current_workflow.append(url)
         # Remove the current link from the current workflow and return
         if(len(current_workflow)!=0):
             # if it is a login workflow store it
-            for key in filtered_workflow.keys():
-                if(check_tag_exists(current_workflow,'login')):
-                    result = convert_url_to_tags(current_workflow)
-                    if result not in filtered_workflow['login']:
-                        filtered_workflow['login'].append(result)
-                        f = open("fw.txt", "a")
-                        f.write(str(current_workflow))
-                        f.write("\n")
-                        f.write(str(result))
-                        f.write("\n")
-
-                        f.close()
+            f = open("all_workflows.txt", "a")
+            f.write(str(current_workflow))
+            f.write("\n")
+            f.close()
             current_workflow.pop()
-        print("after popping",current_workflow)
         # visited_links.pop()
         return parent
 
@@ -93,7 +81,7 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
             if(len(current_workflow)!=0):
                 for key in filtered_workflow.keys():
                     if(check_tag_exists(current_workflow,key)):
-                        result = convert_url_to_tags(current_workflow[2:])
+                        result = convert_url_to_tags(current_workflow)
                         if result not in filtered_workflow[key]:
                             filtered_workflow[key].append(result)
                 current_workflow.pop()
@@ -134,19 +122,12 @@ def crawl(url, visited_links, current_workflow,parent_id,tag,e_id,e_class,e_xpat
     return parent
 
 visited_links = set()
-filtered_workflow = {'login':[]}
 current_workflow = []
 parent1 = crawl(b_url, visited_links, current_workflow,0,'home','id','class','xpath')
 f = open("demo5.json", "a")
 f.write(json.dumps(parent1))
 f.write("\n")
 f.close()
-
-f = open("filteredworkflow1.json", "a")
-f.write(str(filtered_workflow))
-f.write("\n")
-f.close()
-
 
 
 
